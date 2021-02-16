@@ -1,0 +1,22 @@
+# this is a file for notes relative to financial programming
+
+# unimportable modules
+# import pyfolio
+# import zipline
+# import vollib
+# import ta-lib
+
+# unused modules
+import pyfin
+import quantpy
+import trade
+import quantitative
+import analyzer
+import bt
+import backtrader
+import tradingWithPython
+import algobroker
+import empyrical
+import finance
+import qfrm
+import VisualPortfolio

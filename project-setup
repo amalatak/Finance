@@ -1,0 +1,18 @@
+# perform setup of virtual environment
+
+
+VIRTUAL_ENV_NAME="venv"
+
+if [ ! -d $VIRTUAL_ENV_NAME ] 
+then
+    python3 -m venv venv
+fi
+
+source $VIRTUAL_ENV_NAME/bin/activate
+
+if [[ $(diff -u requirements.txt <(pip freeze)) ]]
+then
+    pip install -r requirements.txt
+fi
+
+PS1='($VIRTUAL_ENV_NAME) \e[0;32m\u\e[m:\e[0;34m\w\e[m$ '
