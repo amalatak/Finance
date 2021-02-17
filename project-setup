@@ -15,4 +15,4 @@ then
     pip install -r requirements.txt
 fi
 
-PS1='($VIRTUAL_ENV_NAME) \e[0;32m\u\e[m:\e[0;34m\w\e[m$ '
+PS1='($VIRTUAL_ENV_NAME) \[\e[0;32m\]\u\[\e[m\]:\[\e[0;34m\]\w\[\e[m\]$ '
